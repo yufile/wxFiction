@@ -1,0 +1,15 @@
+<!--pages/bookcase/bookcase.wxml-->
+<view class="bookcase" >
+  <view class="bookcase-swiper">
+    <swiper indicator-dots="{{true}}" autoplay interval="{{3000}}" circular indicator-active-color="#fff" indicator-color="#000">
+      <swiper-item><view class="item1"><image mode="widthFix" src="/public/img/item1.jpg"></image></view></swiper-item>
+      <swiper-item><view class="item2"><image mode="widthFix" src="/public/img/item2.jpg"></image></view></swiper-item>
+      <swiper-item><view class="item3"><image mode="widthFix" src="/public/img/item3.jpg"></image></view></swiper-item>
+    </swiper>
+  </view>
+  <view class="bookcase-conten">
+    <all-data bind:parentComponentFunction="parentComponentFunction" alldatalist="{{alldatalist}}"></all-data>
+  </view>
+  <view class="login" wx:if="{{isShow}}">登录了才能添加书籍哦</view>
+  <view class="login" wx:if="{{!isShow && alldatalist.length === 0}}">可以去书城添加书啦</view>
+</view>

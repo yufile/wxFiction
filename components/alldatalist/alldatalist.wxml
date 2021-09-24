@@ -1,0 +1,16 @@
+<!--components/alldatalist/alldatalist.wxml-->
+<view class="all-data" >
+  <view class="book-data" wx:for="{{alldata}}" wx:key="item" bindtap="onClick"  
+  data-item="{{item}}">
+    <view class="book-img">
+      <image mode="widthFix" binderror="imageError" data-id="{{index}}" src="{{item.img}}"  lazy-load="true" alt=""></image>
+    </view>
+    <view class="book-content">
+      <view>{{item.bigtitle}}</view>
+      <view>{{item.author}}</view>
+      <view>{{item.endupdate}}</view>
+      <view>{{item.newupdate}}</view>
+      <view>{{item.intro}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "all-data":"/components/bookcasepage/alldatalist"
+  },
+  "navigationBarTitleText": "我的书架"
+}

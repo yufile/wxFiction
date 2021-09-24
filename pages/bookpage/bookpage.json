@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cata-logue":"/components/catalogue/catalogue"
+  },
+  "navigationBarTitleText": "详情"
+}

@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/bookcase/bookcase",
+    "pages/bookstore/bookstore",
+    "pages/mine/mine",
+    "components/alldatalist/alldatalist",
+    "pages/serch/serch",
+    "pages/bookpage/bookpage",
+    "pages/chapter/chapter"
+  ],
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#69abcb",
+    "list": [
+      {
+        "pagePath": "pages/bookcase/bookcase",
+        "text": "书架",
+        "iconPath": "public/img/bookrack.png",
+        "selectedIconPath": "public/img/bookrack2.png"
+      },
+      {
+        "pagePath": "pages/bookstore/bookstore",
+        "text": "书城",
+        "iconPath": "public/img/bookcity.png",
+        "selectedIconPath": "public/img/bookcity2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "public/img/min.png",
+        "selectedIconPath": "public/img/min2.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#69abcb",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookcase/bookcase",
+          "pathName": "pages/bookcase/bookcase",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookstore/bookstore",
+          "pathName": "pages/bookstore/bookstore",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookstore/bookstore",
+          "pathName": "pages/bookstore/bookstore",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "components/alldatalist/alldatalist",
+          "pathName": "components/alldatalist/alldatalist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/serch/serch",
+          "pathName": "pages/serch/serch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookpage/bookpage",
+          "pathName": "pages/bookpage/bookpage",
+          "query": "item=%7B%22item%22%3A%7B%22bigtitle%22%3A%22%E4%B8%80%E5%A4%9C%E5%BC%BA%E5%AE%A0%EF%BC%9A%E7%A6%81%E6%AC%B2%E6%80%BB%E8%A3%81%E5%BC%BA%E5%88%B6%E7%88%B1%22%2C%22id%22%3A%22-756967942%22%2C%22img%22%3A%22http%3A%2F%2Fwww.xs5200.com%2Ffiles%2Farticle%2Fimage%2F11%2F11750%2F11750s.jpg%22%2C%22author%22%3A%22%E4%BD%9C%C2%A0%C2%A0%C2%A0%C2%A0%E8%80%85%EF%BC%9A%E7%B4%A0%E9%94%A6%22%2C%22intro%22%3A%22%E4%B8%80%E5%A4%9C%E6%B2%89%E6%B2%A6%EF%BC%8C%E8%8B%8F%E8%9C%9C%E8%85%B9%E4%B8%AD%E5%A4%9A%E4%BA%86%E4%B8%80%E5%AF%B9%E9%BE%99%E5%87%A4%E8%83%8E%E3%80%82%5B%E5%B1%95%E5%BC%80%5D%22%2C%22endupdate%22%3A%22%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0%EF%BC%9A2021-06-26%2015%3A10%3A02%22%2C%22newupdate%22%3A%22%E7%AC%AC2371%E7%AB%A0%EF%BC%9A%E8%AE%B0%E5%9C%A8%E5%BF%83%E9%87%8C%22%7D%7D",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookcase/bookcase",
+          "pathName": "pages/bookcase/bookcase",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

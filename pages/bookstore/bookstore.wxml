@@ -1,0 +1,24 @@
+<!--pages/bookstore/bookstore.wxml-->
+<view class="bookstore">
+  <view class="serch">
+    <van-cell-group>
+      <van-search disabled background="#69abcb" shape="round" bindtap="onClick" placeholder="请输入书名" />
+    </van-cell-group>
+  </view>
+  <view class="classify">
+    <van-tabs custom-class="vantabs" sticky="true"  line-width="200rpx" class="tag" active="{{ active }}" bind:change="onChange">
+      <van-tab title="全部">
+        <all-data alldatalist="{{alldatalist}}"></all-data>
+      </van-tab>
+      <van-tab title="玄幻">
+        <all-data alldatalist="{{fandatalist}}"></all-data>
+      </van-tab>
+      <van-tab title="都市">
+        <all-data alldatalist="{{citydatalist}}"></all-data>
+      </van-tab>
+      <van-tab title="其他">
+        <all-data alldatalist="{{erodatalist}}"></all-data>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

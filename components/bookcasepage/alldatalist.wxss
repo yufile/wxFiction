@@ -1,0 +1,41 @@
+/* components/alldatalist/alldatalist.wxss */
+.all-data {
+  width: 96%;
+  height: 100%;
+  padding: 20rpx 2% 0;
+  background-color: rgb(98, 146, 201);
+}
+.book-data {
+  margin-bottom: 20rpx;
+  height: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.book-content {
+  width: 70%;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.book-content view {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 10rpx;
+  text-overflow: ellipsis;
+}
+.book-content view:nth-of-type(1) {
+  font-size: 38rpx;
+}
+.book-img image{
+  width: 120rpx;
+  margin-right: 20rpx;
+}
+.right {
+  width: 130rpx;
+  height: 100%;
+  color: #fff;
+  background-color: #ff0404;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 67rpx;
+}

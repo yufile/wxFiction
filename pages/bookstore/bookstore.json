@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "all-data":"/components/alldatalist/alldatalist"
+  },
+  "navigationBarTitleText": "书城"
+}

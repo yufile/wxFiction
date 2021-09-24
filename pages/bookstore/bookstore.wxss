@@ -1,0 +1,5 @@
+/* pages/bookstore/bookstore.wxss */
+.bookstore {
+  width: 750rpx;
+  height: 100vh;
+}

@@ -1,0 +1,21 @@
+<!--components/alldatalist/alldatalist.wxml-->
+<view class="all-data">
+  <view  wx:for="{{alldata}}" wx:key="item" >
+    <van-swipe-cell right-width="{{ 65 }}">
+      <van-cell-group>
+      <view class="book-data" bindtap="onClick" data-item="{{item}}">
+        <view class="book-img">
+          <image mode="widthFix" binderror="imageError" data-id="{{index}}" src="{{item.img}}"  alt=""></image>
+        </view>
+        <view class="book-content">
+          <view>{{item.bigtitle}}</view>
+          <view>{{item.author}}</view>
+          <view>{{item.endupdate}}</view>
+        </view>
+      </view>
+      </van-cell-group>
+      <view slot="right" bindtap="deleteBook" data-id="{{item.id}}" class="right">删除</view>
+    </van-swipe-cell>
+
+  </view>
+</view>

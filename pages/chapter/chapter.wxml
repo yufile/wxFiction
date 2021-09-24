@@ -1,0 +1,34 @@
+<!--pages/chapter/chapter.wxml-->
+<view class="chapter" wx:if="{{isNone}}" style="background:{{styleBack.background}};color:{{styleBack.color}}">
+  <view class="chapter-content" bindtap="setStyle">
+    <view class="content-title">{{chapter.title}}</view>
+    <view class="content-word" style="font-size:{{bs}};">
+      <rich-text nodes="{{chapter.content}}"></rich-text>
+    </view>
+  </view>
+  <view class="bottom">
+    <van-button plain type="info" bind:click="upTo" disabled="{{pid == 0}}">上一章</van-button>
+    <van-button plain type="info" bind:click="catalogue" round>目录</van-button>
+    <van-button plain type="info" bind:click="nextTo" disabled="{{pid == le-1}}">下一章</van-button>
+  </view>
+  <cata-logue show="{{show}}" class="catalogue2" sectionid="{{id}}"></cata-logue>
+  <van-popup show="{{ show1 }}" position="bottom" custom-style="height: 30%; width:100%" bind:close="onClose">
+    <view class="fontbs">
+      <text>Aa-</text>
+      <van-slider min="20" value="{{sizeValue}}" max="100" bind:change="onChange" />
+      <text>Aa+</text>
+    </view>
+    <view class="sectionBack">
+      <van-radio-group direction="horizontal" value="{{ radio }}" bind:change="onChangeBack">
+        <van-radio name="1">默认</van-radio>
+        <van-radio name="2">护眼</van-radio>
+        <van-radio name="3">黑色</van-radio>
+        <van-radio name="4">黑白</van-radio>
+      </van-radio-group>
+      <view class="rout">
+        <van-button plain type="info" bind:click="upTo" disabled="{{pid == 0}}">上一章</van-button>
+        <van-button plain type="info" bind:click="nextTo" disabled="{{pid == le-1}}">下一章</van-button>
+      </view>
+    </view>
+  </van-popup>
+</view>

@@ -1,0 +1,23 @@
+/* components/catalogue/catalogue.wxss */
+.catalogue {
+  width: 750rpx;
+  height: 100%;
+}
+.section {
+  width: 90%;
+  height: 100%;
+  margin: 20rpx auto;
+  color: #000;
+}
+.section-content {
+  padding: 20rpx 0;
+  border-bottom: 2rpx #ddd solid;
+}
+.section-content:active {
+  background-color: aliceblue;
+}
+.bottom {
+  color: rgb(102, 182, 253);
+  width: 50%;
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+<!--pages/serch/serch.wxml-->
+<view class="serch">
+  <view class="serch-top">
+    <van-search  value="{{ value }}" placeholder="请输入书名" background="#69abcb" show-action   bind:search="onSearch" bind:cancel="onCancel" />
+  </view>
+
+  <view class="tag-top">
+    <view class="title">历史记录</view>
+    <view class="tag">
+      <van-tag wx:if="{{ show.primary }}" wx:for="{{tagvalue}}" wx:key="tagvalue" color="#69abcb" size="medium" plain
+       round type="primary" id="primary" >{{item}}</van-tag>
+    </view>
+    <van-button wx:if="{{tagvalue.length !== 0}}" plain  round type="info" size="mini" bindtap="onClose">清空记录</van-button>
+  </view>
+  <view class="serch-data" wx:if="{{alldatalist.length !== 0}}">
+    <all-data  alldatalist="{{alldatalist}}"></all-data>  
+  </view>
+</view>

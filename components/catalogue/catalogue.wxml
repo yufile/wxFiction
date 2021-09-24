@@ -1,0 +1,15 @@
+<!--components/catalogue/catalogue.wxml-->
+<view class="catalogue">
+  <van-popup show="{{ show }}" z-index="9" position="left" custom-style="height: 100%; width:80%"
+    bind:click-overlay="over">
+    <view class="section" bindtouchstart="touchStart">
+      <view class="section-content" id="section" bindtap="onClick"  wx:for="{{sectiondata}}" wx:key="*this" data-id="{{item.pid}}">
+        {{item.title}}
+      </view>
+      <view class="bottom" wx:if="{{showBottom}}">
+        <van-icon name="like-o" />
+        <text>已经到底部了</text>
+      </view>
+    </view>
+  </van-popup>
+</view>

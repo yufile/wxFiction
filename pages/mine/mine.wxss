@@ -1,0 +1,46 @@
+/* pages/mine/mine.wxss */
+.mine {
+  width: 750rpx;
+  height: 100vh;
+  background-color: rgb(222, 244, 253);
+}
+.userinfo {
+  width: 100%;
+  padding-top: 100rpx;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.userinfo button{
+  width: 250rpx;
+  background:green;
+  color:#fff;
+  margin-top: 50rpx;
+}
+.profile {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: cadetblue;
+}
+.info {
+  width: 100%;
+  height: 100%;
+}
+.info-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-top image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+.info-top text {
+  margin-bottom: 20rpx;
+  color: #000;
+}

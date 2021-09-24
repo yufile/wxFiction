@@ -1,0 +1,38 @@
+<!--pages/bookpage/bookpage.wxml-->
+<page-meta page-style="{{ show ? 'overflow: hidden;' : '' }}" />
+<view class="bookpage">
+  <view class="bookpage-top">
+    <view class="content-image">
+      <image mode="widthFix"  src="{{pagedata.img}}" binderror="geterr"></image>
+      <view>{{pagedata.bigtitle}}</view>
+      <view>{{pagedata.author}}</view>
+      <view>{{pagedata.endupdate}}</view>
+      <view>{{pagedata.newupdate}}</view>
+      <view class="intro">{{pagedata.intro}} </view>
+    </view>
+  </view>
+  <view class="comment">
+    <view class="title">精彩评论</view>
+    <view class="comment-one" wx:for="{{comment}}" wx:key="*this">
+      <view class="one-user">
+        <text></text><text>{{item.name}}</text>
+      </view>
+      <view>{{item.remark}}</view>
+    </view>
+  </view>
+  <view class="tar">
+    <van-goods-action>
+      <van-goods-action-button plain color="#8ccee7" 
+      bind:click="add" wx:if="{{!addBook}}"
+      text="加入书架" type="warning" disabled="{{stop}}" />
+      <van-goods-action-button color="#8ccee7" 
+       wx:else text="已在书架"  />
+      <van-goods-action-button plain color="#8ccee7" 
+      bindtap="onClick" 
+      text="目录" type="warning" />
+      <van-goods-action-button plain color="#8ccee7" bind:click="promptly" text="立即阅读" />
+    </van-goods-action>
+    <cata-logue show="{{show}}" id="catalogue" sectionid="{{sectionid}}"></cata-logue>
+  </view>
+  
+</view>
